@@ -1,0 +1,1487 @@
+@charset "utf-8";
+/* Reset HTML Elements *//* ----------------------------------------- */
+*, html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td {
+	margin:0;
+	padding:0
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+	padding: 0;
+	margin: 0;
+}
+fieldset, img {
+	border:0
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+	font-style:normal;
+	font-weight:normal
+}
+ol, ul, li {
+	list-style:none
+}
+caption, th {
+	text-align:left
+}
+q:before, q:after {
+	content:''
+}
+* {
+	outline: none;
+}
+strong {
+	font-weight: bold
+}
+em {
+	font-style: italic
+}
+a img {
+	border:none
+}
+.first {
+	display:none;
+}
+/*-General Styles------------------------------------------*/
+
+a, a:visited {
+	text-decoration:none;
+	color: #000;
+}
+a:hover {
+	text-decoration:none;
+}
+a:active {
+	border: none;
+	border: 0;
+}
+p {
+	line-height:18px;
+	direction: rtl;
+	font-family: Tahoma, Geneva, sans-serif;
+	text-align: justify;
+}
+p a, p a:visited {
+	text-decoration:none;
+	color: #000;
+	text-shadow: 0 0 1px #999;
+}
+.clear {
+	clear: both;
+}
+h1,h2,h3,h4,h5,h6 {
+}
+.right{	float:right;}
+.left{float:left;}
+/*End  Reset HTML Elements*/
+/*--------------My CSS------------------*/
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: bold;
+	src: url('fonts/eot/IRANSansWeb_Bold.eot');
+	src: url('fonts/eot/IRANSansWeb_Bold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/woff2/IRANSansWeb_Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/woff/IRANSansWeb_Bold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/ttf/IRANSansWeb_Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 500;
+	src: url('fonts/eot/IRANSansWeb_Medium.eot');
+	src: url('fonts/eot/IRANSansWeb_Medium.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/woff2/IRANSansWeb_Medium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/woff/IRANSansWeb_Medium.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/ttf/IRANSansWeb_Medium.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 300;
+	src: url('fonts/eot/IRANSansWeb_Light.eot');
+	src: url('fonts/eot/IRANSansWeb_Light.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/woff2/IRANSansWeb_Light.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/woff/IRANSansWeb_Light.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/ttf/IRANSansWeb_Light.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 200;
+	src: url('fonts/eot/IRANSansWeb_UltraLight.eot');
+	src: url('fonts/eot/IRANSansWeb_UltraLight.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/woff2/IRANSansWeb_UltraLight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/woff/IRANSansWeb_UltraLight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/ttf/IRANSansWeb_UltraLight.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: normal;
+	src: url('fonts/eot/IRANSansWeb.eot');
+	src: url('fonts/eot/IRANSansWeb.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/woff2/IRANSansWeb.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/woff/IRANSansWeb.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/ttf/IRANSansWeb.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Yekan';
+    src: url('fonts/WebYekan.eot');
+    src: url('fonts/WebYekan.eot?#iefix') format('embedded-opentype'),
+         url('fonts/WebYekan.woff') format('woff'),
+         url('fonts/WebYekan.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+	background:#fff;
+	direction:rtl;
+    font-family: IRANSans !important;
+    font-weight: 300;
+	color:#424242;
+    border-top: 6px solid #f7931e;
+}
+.container {
+    background: none repeat scroll 0 0 transparent;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    width: 98%;
+	max-width:1300px;
+}
+#header {
+	padding-top:25px;
+}
+#header #logo a {
+	background:url(images/logo.png) no-repeat scroll 0 0;
+	width:150px;
+	height:45px;
+	overflow:hidden;
+	text-indent:-99999em;
+	font-size:1px;
+	display:block;
+	float:right;
+	margin-right:10px;
+}
+#header #accessible{
+	overflow:hidden;
+	float:left;
+	font:12px/28px IRANSans;
+	color:#9e9e9e;
+	margin-top:10px;
+}
+#header #accessible #city{
+	border:1px solid #e5e5e5;
+	border-radius:0 35px 35px 0;
+	padding-right:35px;
+	padding-left:10px;
+	background:url(images/mapflag.png) no-repeat right center;
+	float:right;
+    border-left: none;
+}
+#header #accessible #city #city_select{
+	background: url(images/cityselectbg.png) no-repeat left center;
+	overflow:hidden;
+	width:95px;
+	height:28px;
+	float:left;
+}
+#header #accessible #city #city_select select{
+    line-height: 28px;
+	font:12px/28px IRANSans;
+    color: #f7931e;
+    outline: 0 none;
+	box-shadow:none;
+	border:none;
+	width:120px;
+	background:none;
+	height:28px;
+	direction:rtl;
+}
+#header #accessible #city select option {box-shadow:none !important;padding:0 5px;border:none;}
+#header #accessible #shire{
+	border:1px solid #e5e5e5;
+    padding: 0 10px;
+    float:right;
+}
+#header #accessible #shire #shire_select{
+	background: url(images/cityselectbg.png) no-repeat left center;
+	overflow:hidden;
+	width:65px;
+	height:28px;
+	float:left;
+}
+#header #accessible #shire #shire_select select{
+    line-height: 28px;
+	font:12px/28px IRANSans;
+    color: #f7931e;
+    outline: 0 none;
+	box-shadow:none;
+	border:none;
+	width:90px;
+	background:none;
+	height:28px;
+	direction:rtl;
+}
+#header #accessible #shire select option {box-shadow:none !important;padding:0 5px;border:none;}
+#header #accessible #head_search {
+	border:1px solid #e5e5e5;
+	border-right:none;
+	border-radius:35px 0 0 35px;
+	background:#f8f8f8;
+	float:left;
+	padding-left:10px;
+}
+#header #accessible #head_search .head_search_input{
+	float:left;
+	border:none;
+	background:none;
+	width:160px;
+	font:12px/28px IRANSans;
+}
+#header #accessible #head_search .submit_head_search {
+	float:left;
+	background:url(images/headsearchicon.png) no-repeat center center;
+	border:none;
+	width:28px;
+	height:28px;
+	cursor:pointer;
+}
+#header #subheader{
+	font:12px/45px IRANSans;
+	color:#424242;
+	background:#eee;
+	margin:25px 0 10px;
+}
+#header #subheader:after {
+	content: " ";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+#header #subheader #nav{float:right;}
+#header #subheader #nav ul li {float:right;}
+#header #subheader #nav ul li a{
+	float:right;
+	padding:0 15px;
+}
+#header #subheader #nav ul li a:hover{
+	background:#cecece;
+	transition:all 0.3s ease-in-out 0.1s;
+}
+#header #subheader #bag{
+	background:#f7931e;
+	box-shadow:inset -58px 0px 0px #b46508;	
+    position: relative;
+}
+#header #subheader #bag a{
+	padding-left:15px;
+	padding-right:75px;
+	background:url(images/bagshopbg.png) no-repeat right center;
+	display:inline-block;
+	color:#fff;
+}
+#header #subheader #bag:hover{opacity:0.9;transition:all 0.3s ease-in-out 0.1s;}
+#header #subheader #bag span{
+	position: absolute;
+    top: 11px;
+    left: -10px;
+	color:#009688;
+	font:12px/18px IRANSans;
+	border: 2px solid #009688;
+    background: #fff;
+    width: 30px;
+    height: 22px;
+    box-sizing: border-box;
+    text-align: center;
+}
+#header #subheader #lrlink{float:left;margin-left:15px;}
+#header #subheader #lrlink a{margin:0 5px;}
+#header #subheader #lrlink a:hover{color:#ef5350;transition:all 0.3s ease-in-out 0.1s;}
+#header #subheader #user{float:left;margin-left:15px;padding-left:15px;background:url(images/userbg.png) no-repeat left center;}
+#header #subheader #user a:hover{color:#ef5350;transition:all 0.3s ease-in-out 0.1s;}
+#header #reslrlink{display:none;text-align:center;font:13px/20px IRANSans;margin-top:10px;}
+#header #reslrlink a{margin:0 5px;}
+#header #resuser{display:none;text-align:center;font:13px/20px IRANSans;margin-top:10px;padding-left:15px;background:url(images/userbg.png) no-repeat left center;}
+#header #resuser a{margin:0 5px;}
+#header #resuser a:hover{color:#ef5350;transition:all 0.3s ease-in-out 0.1s;}
+#header #resuser a:hover{color:#ef5350;transition:all 0.3s ease-in-out 0.1s;}
+#wrapper #slider {
+	overflow: hidden;
+	direction: ltr;
+	max-height: 395px;
+}
+#wrapper #slider img {
+	border: 1px solid #56102f;
+	box-sizing: border-box;
+	width: 100%;
+	height: auto;
+	max-height: 400px;
+}
+#wrapper #slider .owl-theme .owl-controls {margin-top: -5px;}
+#wrapper #slider .owl-buttons div {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 0;
+	margin: 0;
+	width: 30px;
+	height: 45px;
+	overflow: hidden;
+    background: none;
+    text-indent: -9999em;
+    opacity: 1 !important;
+	cursor: pointer;
+}
+#wrapper #slider .owl-buttons div.owl-next {
+	right: 10px;
+	background-image: url(../images/arrows.png);
+	background-repeat: no-repeat;
+	background-position: -30px 0;
+}
+#wrapper #slider .owl-buttons div.owl-prev {
+	left: 10px;
+	background-image: url(../images/arrows.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+#wrapper #main_tabber {overflow: hidden;margin-top: 10px;}
+#wrapper #main_tabber .tabbs{background: #eee;width: 100%;box-sizing: border-box;padding: 0 20px;}
+#wrapper #main_tabber .tabbs li{float:right;display:inline;}
+#wrapper #main_tabber .tabbs li a{
+	display:block;
+	font:15px/45px IRANSans;
+	color:#424242;
+	padding:0 15px;
+}
+#wrapper #main_tabber .tabbs .active a{border-top:2px solid #f7931e;background: #fff;color: #f7931e;}
+#wrapper #main_tabber .tab_container{overflow:hidden;background:#f8f8f8;padding:10%;}
+#wrapper #main_tabber {width:100%;float:right;}
+#wrapper #main_tabber .tabbs{float:right;}
+#wrapper #main_tabber .tabbs li{float:right;display:inline;}
+#wrapper #main_tabber .tabbs li a{
+	display:block;
+	font:15px/45px IRANSans;
+	color:#424242;
+	padding:0 15px;
+}
+#wrapper #main_tabber .tab_container{overflow:hidden;background:#fff;padding:20px 5px;font:14px/26px IRANSans;color:#424242;}
+/*
+#wrapper .headline {
+	font:14px/45px IRANSans;
+	color:#424242;
+	height:45px;
+	background:#eee;
+	padding-right:20px;
+	margin-bottom:20px;
+}
+#wrapper .headline h3{font:14px/45px IRANSans;border-top:2px solid #56102f;float:right;}
+#wrapper .headline .seemore a{
+	font:12px/45px IRANSans;
+	background:#56102f;
+	color:#fff;
+	display:inline-block;
+	padding:0 15px;
+	float:left;
+}
+#wrapper .headline .seemore a:hover{background:#3f051f;transition:all 0.3s ease-in-out 0.1s;}
+*/
+#wrapper .cards .bigcard {width: 49%;}
+#wrapper .cards .bigcard:nth-child(1) {float: right;}
+#wrapper .cards .bigcard:nth-child(2) {float: left;}
+#wrapper .cards .smallcard {width: 32%;float: right;}
+#wrapper .cards .smallcard:nth-child(2) {margin-right: 2%;margin-left: 2%;}
+#wrapper .cards .card {
+	border-radius: 4px;
+	background: #fefefe;
+	box-shadow:0px 0px 3px 0 rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	position: relative;
+	height: 200px;
+	margin-bottom: 15px;
+}
+#wrapper .cards .card .cardimg img {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+#wrapper .cards .card .cardtitle {
+	font:300 15px/30px iranyekan;
+	color: #333;
+	text-align: left;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+#wrapper .cards .card .cardtitle span {
+	display: block;
+	color: #56102f;
+	font-weight: bold;
+	font-size: 22px;
+}
+#wrapper #brandslist {
+	direction: ltr;
+	overflow: hidden;
+	margin: 40px 0 30px;
+}
+#wrapper #brandslist .brandlogo {
+	text-align: center;
+}
+#wrapper #brandslist .owl-theme .owl-controls {margin-top: -5px;}
+#wrapper #brandslist .owl-buttons div {
+	position: absolute;
+	top: 0;
+	padding: 0;
+	margin: 0;
+	width: 30px;
+	height: 45px;
+	overflow: hidden;
+    background: none;
+    text-indent: -9999em;
+    opacity: 1 !important;
+	cursor: pointer;
+}
+#wrapper #brandslist .owl-buttons div.owl-next {
+	right: 25px;
+	background-image: url(../images/arrows.png);
+	background-repeat: no-repeat;
+	background-position: -30px 0;
+}
+#wrapper #brandslist .owl-buttons div.owl-prev {
+	left: 25px;
+	background-image: url(../images/arrows.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+#wrapper .banner {
+	overflow:hidden;
+	border-radius:4px;
+	margin:10px 0;
+	position:relative;
+}
+#header #breadcrumbs{
+	font:11px/30px IRANSans;
+	color:#424242;
+	background:#eee;
+	margin:10px 0 10px;
+    padding: 0 10px;
+}
+#header #breadcrumbs:after {
+	content: " ";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+#header #breadcrumbs a {background: url(images/otherbc.png) no-repeat right center; padding-right: 15px;margin-left: 8px;}
+#header #breadcrumbs a.homebc {background: url(images/homebc.png) no-repeat right center; padding-right: 20px;}
+#wrapper .banner img{width:100%;height:auto;}
+#wrapper .banner button {
+	float:left;
+	width:16px;
+	height:16px;
+	background:url(images/delete.png) no-repeat right top;
+	border:none;
+	position:absolute;
+	top:10px;
+	left:10px;
+}
+#wrapper #facilities_box {
+    background: #eee;
+    padding: 15px 15px 10px 15px;
+    overflow: hidden;
+    margin: 15px 0;
+    text-align: center;
+}
+#wrapper #facilities_box .facilities {
+    height: 45px;
+    display: inline-block;
+    margin: 0 20px;
+}
+#wrapper #facilities_box .facilities img {
+    float: right;
+    margin-left: 10px;
+}
+#wrapper #facilities_box .facilities h4{
+    font:12px/45px IRANSans;
+    color: #424242;
+    float: right;
+}
+#wrapper #slider {
+	min-height:400px;
+	margin-bottom:20px;
+}
+#popular {overflow:hidden;}
+.headline {
+	font:14px/45px IRANSans;
+	color:#424242;
+	height:45px;
+	background:#eee;
+	padding-right:20px;
+	margin-bottom:20px;
+}
+.headline h3{font:14px/45px IRANSans;border-top:2px solid #f7931e;float:right;}
+.headline .seemore a{
+	font:14px/45px IRANSans;
+	background:#f7931e;
+	color:#fff;
+	display:inline-block;
+	padding:0 20px;
+	float:left;
+}
+#wrapper .headline .seemore a:hover{background:#b46508;transition:all 0.3s ease-in-out 0.1s;}
+#wrapper .allposts {overflow:hidden;padding:5px 15px;}
+#wrapper .post{
+	float:right;
+	width:22%;
+	border:1px solid #f3f3f3;	
+	position:relative;
+	margin-left:3.5%;
+	margin-bottom:20px;
+	height:355px;
+}
+#wrapper .post:hover{background:#f9f9f9;transition:all 0.3s ease-in-out 0.1s;}
+#wrapper .post:nth-child(4n){float:left;margin-left:0;}
+#wrapper .post .occasion{
+	width:86px;
+	height:86px;
+	position:absolute;
+	top:-5px;
+	right:-5px;
+	background:url(images/occasionbg.png) no-repeat right top;	
+}
+#wrapper .post .pic{
+	overflow:hidden;
+	width:100%;
+	height:200px;	
+}
+#wrapper .post img  {
+	width:100%;
+	height:200px;	
+}
+#wrapper .post .postcontent{overflow:hidden;padding:5px;}
+#wrapper .post .title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+}
+#wrapper .post .title a{
+    font:15px/30px IRANSans;color:#444444;font-weight:500;
+    height: 30px;
+}
+#wrapper .post .subtitle{
+    font:12px/25px IRANSans;color:#444444;
+    height: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#wrapper .post .price {
+	text-align:center;
+	font:36px/35px 'Yekan';
+	color:#009688;
+}
+#wrapper .post .price span{font:18px/45px IRANSans;}
+#wrapper .post .offprice {
+	font:14px/45px 'Yekan';
+	color:#444444;
+}
+#wrapper .post .offprice span{text-decoration:line-through;}
+#wrapper .post .meta{
+	border-top:1px solid #dedede;
+	font:16px/45px IRANSans;font-weight:500;
+	color:#f7931e;
+	overflow:hidden;
+	padding:0 3px;	
+}
+#wrapper .post .meta .time {padding-left:20px;background:url(images/posttimebg.png) no-repeat left center;}
+#wrapper .post .meta .place {padding-left:20px;background:url(images/postplace.png) no-repeat left center;margin:0 5%;}
+#wrapper .post .meta .salenum {padding-left:25px;background:url(images/salenumbg.png) no-repeat left center;}
+#wrapper #blog {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+#wrapper #blog #lastpost {
+	width: 49%;
+	float: right;
+	background: #f9f9f9;
+	padding: 10px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+#wrapper #blog #lastpost .pic {
+	float: right;
+	width: 160px;
+	height: 160px;
+	margin-left: 10px;
+}
+#wrapper #blog #lastpost .title a {
+	font:15px/25px IRANSans;
+	color: #424242;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+#wrapper #blog #lastpost .text {
+	font:12px/20px IRANSans;
+	color: #777777;
+	text-align: justify;
+}
+#wrapper #blog #lastpost .more a {
+	float: left;
+	font:11px/25px IRANSans;
+	color: #fff;
+	padding: 0 10px;
+	background: #f7931e;
+	transition: all 0.4s ease;
+}
+#wrapper #blog #lastpost .more a:hover {
+	opacity: 0.7;
+}
+#wrapper #blog #morepost {
+	width: 49%;
+	float: left;
+	background: #f9f9f9;
+	padding: 10px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+#wrapper #blog #morepost ul li a {
+	font:13px/29px IRANSans;
+	color: #424242;
+	transition: all 0.4s ease;
+}
+#wrapper #blog #morepost ul li a:hover {
+	color: #56102f ;
+}
+#wrapper #blog #morepost ul li a .icon {
+	margin-left: 5px;
+	color: #56102f;
+}
+#proposal .alloffer {overflow:hidden;padding:3% 1%;}
+#proposal .offer {
+	width:31%;
+	height:215px;	
+	float:right;
+}
+#proposal .offer:nth-child(2){margin:0 3.5%;}
+#proposal .offer .pic{
+	overflow:hidden;
+	width:100%;
+	height:170px;
+	position:relative;	
+}
+#proposal .offer .pic img{
+	width:320px;
+	height:170px;	
+}
+#proposal .offer .pic .offertitle {
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	right:0;
+	background:url(images/offerbg.png) repeat right top;
+	text-align:center;
+}
+#proposal .offer .pic .offertitle h3{
+	font:24px/170px IRANSans;
+	color:#fff;
+}
+#proposal .offer .seemore a{
+	font:14px/45px IRANSans;
+	background:#f7931e;
+	color:#fff;
+	display:block;
+	text-align:center;
+}
+#proposal .offer .seemore a:hover{background:#b46508;transition:all 0.3s ease-in-out 0.1s;}
+#footer {overflow:hidden;}
+#footer #topfooter{
+	overflow:hidden;
+	background:#757575;
+	font:12px/45px IRANSans;
+	color:#fff;
+}
+#footer #topfooter #social {
+	float:right;
+	margin:10px 0;
+}
+#footer #topfooter #social ul li{
+	float:right;
+	display:block;
+}
+#footer #topfooter #social ul li a{
+	float:left;
+	width:24px;
+	height:24px;
+	margin-left:10px;
+	display:block;
+	transition:all 0.2s ease 0s;
+}
+#footer #topfooter #social ul .facebook a{background:url(images/facebook.png) no-repeat 0 0;}
+#footer #topfooter #social ul .instagram a{background:url(images/insta.png) no-repeat 0 0;}
+#footer #topfooter #social ul .twitter a{background:url(images/twitter.png) no-repeat 0 0;}
+#footer #topfooter #social ul li a:hover{opacity:0.7;transition:all 0.3s ease-in-out 0.1s;}
+#footer #topfooter #phonenumbers{padding-left:25px; background:url(images/phonenumbersbg.png) no-repeat left center;}
+#footer #topfooter #emailaddress{padding-left:30px; background:url(images/emailaddress.png) no-repeat left center;margin-left:50px;} 
+#footer #mainfooter {
+	padding:35px 0;
+	background:#eee;
+	overflow:hidden;	
+}
+#footer #mainfooter .widget{
+	float:right;
+	width:18%;	
+}
+#footer #mainfooter .widget ul li{font:13px/30px IRANSans;}
+#footer #mainfooter .widget ul li a{color:#424242;}
+#footer #mainfooter .widget ul li a:hover{color:#000;transition:all 0.3s ease-in-out 0.1s;}
+#footer #mainfooter #newslettersbox {width:40%;}
+#footer #mainfooter #newslettersbox,#footer #mainfooter #newslettersbox strong{font:13px/35px IRANSans;display:block;}
+#footer #mainfooter #newsletters {overflow:hidden;margin-top:20px;width:100%;}
+#footer #mainfooter #newsletters .newsletters_input{
+	float:right;
+	border:none;
+	background:#fff;
+	width:215px;
+	font:12px/45px IRANSans;
+	width:65%;
+	padding:0 5%
+}
+#footer #mainfooter #newsletters .newsletters_submit{
+	float:right;
+	background:#f7931e;
+	border:none;
+	height:45px;
+	cursor:pointer;
+	color:#fff;
+	font:12px/45px IRANSans;
+	width:25%;
+	text-align:center;
+}
+#footer #mainfooter #newsletters .newsletters_submit:hover{transition:all 0.3s ease-in-out 0.1s;background:#b46508;}
+#footer #subfooter{
+	overflow:hidden;
+	background:#757575;
+	color:#cdcdcd;
+	font:13px/30px IRANSans;
+	padding:10px 0;
+}
+#footer #subfooter .yearscopyright {float:left;}
+#footer #subfooter #footermenu ul li{
+	font:15px/30px IRANSans;
+	margin-left:25px;
+	display:inline-block;
+}
+#footer #subfooter #footermenu ul li a{color:#fff;}
+#wrapper {width: 80%;float: left;}
+#sidebar {width: 20%;float: right;}
+#sidebar img {width: 100%;}
+#sidebar .widget .morepost ul li,
+#sidebar .widget .morepost ul li h3,
+#sidebar .widget .morepost ul li h3 a{
+	font:15px/28px IRANSans;
+	color: #585858;
+}
+#wrapper #pageboxwrapper {
+	overflow:hidden;
+	margin:0 0;
+}
+#wrapper #pagewrapper {
+	overflow:hidden;
+	margin:25px 0;
+}
+#wrapper #pageboxwrapper .pagebox,#wrapper #pagewrapper .pagebox{
+	overflow:hidden;
+	background:#fff;
+	border:1px solid #dfdfdf;
+	padding:10px;
+}
+#wrapper #pageboxwrapper .pagebox #login_tabber{width:48%;float:right;}
+#wrapper #pageboxwrapper .pagebox #login_tabber .tabbs{float:right;}
+#wrapper #pageboxwrapper .pagebox #login_tabber .tabbs li{float:right;display:inline;}
+#wrapper #pageboxwrapper .pagebox #login_tabber .tabbs li a{
+	display:block;
+	font:15px/45px IRANSans;
+	color:#424242;
+	padding:0 15px;
+}
+#wrapper #pageboxwrapper .pagebox #login_tabber .tabbs .active a{border-bottom:2px solid #f7931e;}
+#wrapper #pageboxwrapper .pagebox #login_tabber .tab_container{overflow:hidden;background:#f8f8f8;padding:10%;}
+#wrapper #pageboxwrapper .pagebox #login_tabber .tab_container input,#wrapper #pageboxwrapper .pagebox #login_tabber .tab_container textarea{
+    line-height: 28px;
+	font:12px/45px IRANSans;
+    color: #8b8b8b;
+    outline: 0 none;
+	box-shadow:none;
+	border:1px solid #cfcfcf;
+	width:92%;
+	background:#fff;
+	height:45px;
+	direction:rtl;
+	margin-bottom:15px;
+	padding:0 10px;
+}
+.tab_container textarea {
+	height: 200px !important;
+}
+#wrapper #pageboxwrapper .pagebox #login_tabber .tab_container input.email {background:#fff url(images/emailbg.png) no-repeat left center;}
+#wrapper #pageboxwrapper .pagebox #login_tabber .tab_container input.pass {background:#fff url(images/passbg.png) no-repeat left center;}
+#wrapper #pageboxwrapper .pagebox #login_tabber .tab_container .checkbox input[type=checkbox]{margin-top:2px;}
+#wrapper #pageboxwrapper .pagebox #login_tabber .tab_container .checkbox {color:#b2b2b2;font:14px/25px IRANSans;padding:0 15px 10px;}
+#wrapper #pageboxwrapper .pagebox #login_tabber .tab_container .checkbox span a{float:left;color:#f5524b;}
+#wrapper #pageboxwrapper .pagebox #login_tabber .tab_container input[type=submit]{
+	background:#8bc34a url(images/submitbg.png) no-repeat left center;
+	display:block;
+	color:#fff;
+	width:98%;
+	height:44px;
+	font:18px/44px IRANSans;
+	border:none;
+	cursor:pointer;
+	text-align:center;
+}
+#wrapper #pageboxwrapper .pagebox #login_tabber .tab_container input[type=submit]:hover{opacity:0.9;transition:all 0.3s ease-in-out 0.1s;}
+#wrapper #pageboxwrapper .pagebox #loginhelp {width:40%;float:left;padding:7% 5% 0;}
+#wrapper #pageboxwrapper .pagebox #loginhelp h4{
+	font:500 15px/35px IRANSans;
+	color:#515151;
+	padding-right:50px;
+	background: url(images/loginhelpbg.png) no-repeat right center;
+}
+#wrapper #pageboxwrapper .pagebox #loginhelp p{
+	font:14px/25px IRANSans;
+	color:#666;
+	padding-right:50px;
+	text-align:justify;
+}
+#wrapper #pageboxwrapper .pagebox #panel_tabber{width:100%;float:right;}
+#wrapper #pageboxwrapper .pagebox #panel_tabber .tabbs{float:right;}
+#wrapper #pageboxwrapper .pagebox #panel_tabber .tabbs li{float:right;display:inline;}
+#wrapper #pageboxwrapper .pagebox #panel_tabber .tabbs li a{
+	display:block;
+	font:15px/45px IRANSans;
+	color:#424242;
+	padding:0 15px;
+}
+#wrapper #pagewrapper .pagebox #product_tabber .tabbs .active a{border-bottom:2px solid #f7931e;}
+#wrapper #pagewrapper .pagebox #product_tabber .tab_container{overflow:hidden;background:#f8f8f8;padding:10%;}
+#wrapper #pagewrapper .pagebox #product_tabber{width:100%;float:right;}
+#wrapper #pagewrapper .pagebox #product_tabber .tabbs{float:right;}
+#wrapper #pagewrapper .pagebox #product_tabber .tabbs li{float:right;display:inline;}
+#wrapper #pagewrapper .pagebox #product_tabber .tabbs li a{
+	display:block;
+	font:15px/45px IRANSans;
+	color:#424242;
+	padding:0 15px;
+}
+#wrapper #pagewrapper .pagebox #product_tabber .tabbs .active a{border-bottom:2px solid #f7931e;}
+#wrapper #pagewrapper .pagebox #product_tabber .tab_container{overflow:hidden;background:#f8f8f8;padding:20px;font:14px/26px IRANSans;color:#424242;}
+#wrapper .productinfobox {position:relative;}
+#wrapper .productinfobox .occasion{
+	width:86px;
+	height:86px;
+	position:absolute;
+	top:-5px;
+	left:-6px;
+	background:url(images/occasionbg2.png) no-repeat right top;
+	z-index:10;	
+}
+#wrapper .productinfo {
+	border:1px solid #dfdfdf;
+	margin-top:10px;
+	overflow:hidden;
+	background:#fff;
+}
+#wrapper .productinfo .description{
+	width:50%;
+	float:right;
+	overflow:hidden;
+	background:#f8f8f8;	
+}
+#wrapper .productinfo .description header{padding:30px 30px 0 0;}
+#wrapper .productinfo .description header .title{font:18px/30px IRANSans;color:#424242;}
+#wrapper .productinfo .description header .subtitle{font:10px/20px IRANSans;color:#424242;}
+#wrapper .productinfo .costs {overflow:hidden;padding-right:30px;margin:30px 0;}
+#wrapper .productinfo .costs .finalprice {
+	float:left;
+	font:30px/60px IRANSans;
+	color:#424242;
+	padding-left:20px;
+}
+#wrapper .productinfo .costs .rightbox {
+	float:right;
+	width:50%;
+	font:14px/32px IRANSans;
+}
+#wrapper .productinfo .costs .rightbox .auction{text-decoration:line-through;color:#424242;}
+#wrapper .productinfo .costs .rightbox .soldnum{color:#689f38;}
+#wrapper .productinfo .progress {
+	margin:0 auto;
+	text-align:center;
+	overflow:hidden;
+	font:18px/55px IRANSans;
+	color:#424242;
+}
+#wrapper .productinfo .progress .progressbar {
+    background: #d4d4d4;
+    height: 10px;
+    margin:0 auto;
+    padding: 0 3px;
+    width: 300px;
+	position:relative;
+}
+#wrapper .productinfo .progress .progressbarslide span {background:#009688 !important;}
+#wrapper .productinfo .progress .progressbar span {
+    background:#f7931e;
+    height: 10px;
+	position:absolute;
+	left:0;
+	bottom:0;
+}
+#wrapper .productinfo .timer{
+	margin:0 auto 15px;
+	text-align:center;
+	overflow:hidden;
+	font:13px/20px IRANSans;
+	color:#8b8b8b;
+}
+#wrapper .productinfo .timer .datum{display:inline-block;}
+#wrapper .productinfo .timer .datum:nth-child(2){padding:0 15px;border-left:1px solid #d4d4d4;border-right:1px solid #d4d4d4;margin:0 15px;}
+#wrapper .productinfo .timer .datum span{display:block;}
+#wrapper .productinfo .buttons {width:85%;margin:0 auto 25px;overflow:hidden;}
+#wrapper .productinfo .buttons .buy{
+	font:13px/45px IRANSans;	
+	float:right;
+	width:75%;
+	background:#009688;
+	box-shadow:inset -60px 0px 0px #00695c;
+}
+#wrapper .productinfo .buttons .buy a{
+	padding-right:45%;
+	background:url(images/bagshopbg.png) no-repeat right center;
+	display:inline-block;
+	color:#fff;
+}
+#wrapper .productinfo .buttons .buy:hover{opacity:0.9;transition:all 0.3s ease-in-out 0.1s;}
+#wrapper .productinfo .buttons .seedata{
+	font:13px/45px IRANSans;	
+	float:right;
+	width:100%;
+	background:#009688;
+	box-shadow:inset -60px 0px 0px #00796b;
+}
+#wrapper .productinfo .buttons .seedata a{
+	padding-right:45%;
+	background:url(images/bagshopbg.png) no-repeat right center;
+	display:block;
+	color:#fff;
+}
+#wrapper .productinfo .buttons .seedata:hover{opacity:0.9;transition:all 0.3s ease-in-out 0.1s;}
+#wrapper .productinfo .buttons .gift a{
+	font:13px/45px IRANSans;	
+	float:left;
+	width:22%;
+	background:#9e9e9e;
+	text-align:center;
+	color:#fff;
+}
+#wrapper .productinfo .buttons .gift a:hover {background:#848484;}
+#wrapper .productinfo .gallery{overflow:hidden;padding:1% 1% 0% 1%;}
+/* CSS for the loading div */
+#wrapper .productinfo .sp-loading {
+	text-align: center;
+	max-width: 270px;
+	padding: 15px;
+	border: 5px solid #eee;
+	border-radius: 3px;
+	font-size: 12px;
+	color: #888;
+}
+/* Element wrapper */
+#wrapper .productinfo .sp-wrap {
+	display: none;
+	float: left;
+	width:100%;
+}
+/* Thumbnails */
+#wrapper .productinfo .sp-thumbs {
+	display: block;
+	width:20%;
+	float:right;
+}
+#wrapper .productinfo .sp-thumbs img {
+	min-height:80px;
+	min-width: 80px;
+	max-width: 80px;
+}
+#wrapper .productinfo .sp-thumbs a{margin-bottom:10px;border:1px solid #b7b7b7;}
+#wrapper .productinfo .sp-thumbs a:link, .sp-thumbs a:visited {
+	width: 80px;
+	height: 80px;
+	overflow: hidden;
+	opacity: .3;
+	display: inline-block;
+	background-size: cover;
+	background-position: center;
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	-ms-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
+	transition: all .2s ease-out;
+	float:right;
+}
+#wrapper .productinfo .sp-thumbs a:hover {opacity: 1;}
+/* Styles for the currently selected thumbnail */
+#wrapper .productinfo .sp-thumbs a:active, .sp-current {
+	opacity: 1!important;
+	position: relative;
+	border:1px solid #f7931e !important;
+}
+/* Image currently being viewed */
+#wrapper .productinfo .sp-large {
+	position: relative;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	width:75%;
+	float:left;
+	
+}
+#wrapper .productinfo .sp-large a img {
+	max-width: 100%;
+	height: auto;
+}
+#wrapper .productinfo .sp-large a {display: block;}
+/* Panning Zoomed Image */
+#wrapper .productinfo .sp-zoom {
+	position: absolute;
+	left: -50%;
+	top: -50%;
+	cursor: -webkit-zoom-in;
+	cursor: -moz-zoom-in;
+	display: none;
+}
+/* Lightbox */
+.sp-lightbox {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, .9);
+	z-index: 500;
+	display: none;
+	cursor: pointer;
+}
+.sp-lightbox img {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	max-width: 90%;
+	max-height: 90%;
+	border: 2px solid #fff;
+}
+#sp-prev, #sp-next {
+	position: absolute;
+	top: 50%;
+	margin-top: -25px;
+	z-index: 501;
+	color: #fff;
+	padding: 14px;
+	text-decoration: none;
+	background: #000;
+	border-radius: 25px;
+	border: 2px solid #fff;
+	width: 50px;
+	height: 50px;
+	box-sizing: border-box;
+	transition: .2s;
+}
+#sp-prev {
+	left: 10px;
+}
+#sp-prev:before {
+	content: '';
+	border: 7px solid transparent;
+	border-right: 15px solid #fff;
+	position: absolute;
+	top: 16px;
+	left: 7px;
+}
+#sp-next {
+	right: 10px;
+}
+#sp-next:before {
+	content: '';
+	border: 7px solid transparent;
+	border-left: 15px solid white;
+	position: absolute;
+	top: 16px;
+	left: 18px;
+}
+#sp-prev:hover, #sp-next:hover {background: #444;}
+/*--------FACTOR-------------------------------*/
+#wrapper #factor_wrapper #allsteps{height: 70px;text-align: center;margin: 45px 0;}
+#wrapper #factor_wrapper #allsteps ul li{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    margin: 0 45px;
+}
+#wrapper #factor_wrapper #allsteps ul li .stepline{
+    height: 2px;
+    right: 45px;
+    position: absolute;
+    top: 14px;
+    width: 150px;
+    background: #eee;
+}
+#wrapper #factor_wrapper #allsteps ul li.passed .stepline{
+    background: #f7931e;
+}
+#wrapper #factor_wrapper #allsteps ul li.passed .icon{
+    background: #fff;
+    border: 2px solid #f7931e;
+    box-shadow: 0 0 0 5px #fff inset;
+}
+#wrapper #factor_wrapper #allsteps ul li.passed .stepname {color: #f7931e;}
+#wrapper #factor_wrapper #allsteps ul li.active .icon{
+    background: #f7931e;
+    border: 2px solid #f7931e;
+    box-shadow: 0 0 0 5px #fff inset;
+}
+#wrapper #factor_wrapper #allsteps ul li.active .stepname {color: #f7931e;}
+#wrapper #factor_wrapper #allsteps ul li .icon{
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border: 1px solid #eee;
+    box-shadow: 0 0 0 2px #ffffff inset;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+}
+#wrapper #factor_wrapper #allsteps ul li .icon span i{
+    font-size: 27px;
+    line-height: 60px;
+    color: #fff;
+}
+#wrapper #factor_wrapper #allsteps ul li .stepname {
+    font: 12px/25px 'IRANSans';
+    color: #b4b4b4;
+    margin-top: 5px;
+}
+#wrapper #factorbox {
+	overflow:hidden;
+	box-sizing:border-box;
+	padding:15px 30px;
+}
+#wrapper #factorbox table {
+    width: 100%;
+    margin-bottom: 2px;
+}
+#wrapper #factorbox table td {
+    border-bottom: 1px solid #d2d2d2;
+    font:14px/35px IRANSans;
+    padding:5px;
+	border-left:1px solid #d2d2d2;
+	color:#888888;
+	text-align:center;
+}
+#wrapper #factorbox table td:first-child {border-right:1px solid #d2d2d2;}
+#wrapper #factorbox table td:last-child {border-left:1px solid #d2d2d2;}
+#wrapper #factorbox table tr td.details {text-align: right !important;font-size: 14px;}
+#wrapper #factorbox table tr td.details span {display: block;font-size: 12px;}
+#wrapper #factorbox table tr td.details strong {
+    font:500 14px/35px IRANSans;
+    padding: 0 8px;
+    border-bottom: 1px dashed #717171;
+}
+#wrapper #factorbox table tr.sumrow td {border: none;}
+#wrapper #factorbox table tr.sumrow td.sumsbj {
+    text-align: right;
+    border-right:1px solid #d2d2d2;
+    border-bottom:1px solid #d2d2d2;
+}
+#wrapper #factorbox table tr.sumrow td.sumnum {
+    text-align: left;
+    border-left:1px solid #d2d2d2;
+    border-bottom:1px solid #d2d2d2;
+}
+#wrapper #factorbox table tr.final_amount td {color: #f7931e !important;}
+#wrapper #factorbox table tr td .deletefactorrow {
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url(images/deletefactorrow.png) no-repeat center center;
+}
+#wrapper #factorbox table .img {width:100px !important;}
+#wrapper #factorbox table tr.tablehead td {
+    font:14px/35px IRANSans;
+	background:#f7931e;
+    color: #fff;
+    border:1px solid #f7931e;
+    border-bottom:none;
+}
+#wrapper #factorbox table tr.tablehead2 td {
+	background:#f8f8f8;
+    border-top:1px solid #d2d2d2;
+}
+#wrapper #factorbox table tr.table_border {border-top: 1px solid #d2d2d2;}
+#wrapper #factorbox #addproduct {
+	background:#fff url(images/addproduct.png) no-repeat right center;
+	font:15px/40px IRANSans;
+	text-align:center;
+	padding-right:20px;
+	width:175px;
+}
+#wrapper #factorbox #addproduct a{display:block;color:#f7931e;}
+#wrapper #factorbox #finalize {text-align: center;}
+#wrapper #factorbox #finalize a{
+    font:18px/40px IRANSans;
+    padding: 0 10%;
+    background: #009688;
+    display: inline-block;
+    color: #fff;
+    margin: 20px 0;
+}
+#wrapper #factorbox h4 {font:14px/40px IRANSans;margin:15px;color: #888888;}
+#wrapper #factorbox .add_address {overflow: hidden;width: 80%;margin: 25px auto;}
+#wrapper #factorbox .add_address > div{
+    background: #fff url(images/bgaddadress.png) no-repeat top right;
+    border: 1px solid #cfcfcf;
+    width: 48%;
+    font:12px/45px IRANSans;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+#wrapper #factorbox .add_address > div:nth-child(2n) {float: left;}
+#wrapper #factorbox .add_address > div:nth-child(2n-1) {float: right;}
+#wrapper #factorbox .add_address .field input {
+    background: none;
+    border: none;
+    width: 100%;
+    font:12px/45px IRANSans;
+} 
+#wrapper #factorbox .add_address .field_select{
+    overflow: hidden;
+    font:12px/45px IRANSans;
+    background:url(images/selectsexboxbg.png) no-repeat left center;
+    box-sizing: border-box;
+    color: #8b8b8b;
+}
+#wrapper #factorbox .add_address .field_select select {
+    font:12px/45px IRANSans;
+    width: 115%;
+    border: none;
+    background: none;
+    line-height: 45px;
+    color: #8b8b8b;
+}
+#wrapper #factorbox .add_address .field_select select option {line-height: 45px;}
+#wrapper #factorbox .add_address .addnewaddress{
+    border: 1px solid #f7931e;
+    border-radius: 2px;
+    font:14px/45px IRANSans;
+    color: #f7931e;
+    height: 45px;
+    background: #fff;
+    text-align: center;
+    width: 200px;
+}
+#wrapper #factorbox .add_address .addnewaddress a {display: block;color: #f7931e;}
+/*--Comments Section-------------------------------------*/
+#wrapper #pagewrapper .pagebox .commentssection {width: 48%; overflow: hidden;}
+#wrapper #pagewrapper .pagebox .commentssection .commentbox {
+    background: #ededed;
+    border-radius: 3px;
+    padding: 20px 10px 10px 10px;
+    font: 12px/22px IRANSans;
+    color: #878787;
+    position: relative;
+    margin-right: 35px;
+    margin-bottom: 15px;
+}
+#wrapper #pagewrapper .pagebox .commentssection .commentbg {
+    width: 35px;
+    height: 35px;
+    background: url(images/commentbg.png) no-repeat center center;
+    position: absolute;
+    top: 0;
+    right: -35px;
+}
+#wrapper #pagewrapper .pagebox .commentssection .leave_comment {
+    padding: 0 8%;
+    overflow: hidden;
+}
+#wrapper #pagewrapper .pagebox .commentssection .leave_comment textarea {
+    border: 1px solid #e4e4e4;
+    background: #fff;
+    border-radius: 4px;
+    resize: none;
+    width: 100%;
+    height: 110px;
+}
+#wrapper #pagewrapper .pagebox .commentssection .leave_comment .sendcomment {
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 15px;
+    background: #f7931e;
+    font: 18px/45px IRANSans;
+}
+#wrapper #pagewrapper .pagebox .commentssection .leave_comment .sendcomment a {color: #fff;}
+#wrapper #pagewrapper .pagebox .commentssection .scoring {
+    overflow: hidden;
+    text-align: center;
+    font: 14px/25px IRANSans;
+    color: #878787;
+}
+#wrapper #pagewrapper .pagebox .commentssection .linke_buttons {
+    overflow: hidden;
+    margin: 15px auto;
+    text-align: center;
+}
+#wrapper #pagewrapper .pagebox .commentssection .linke_buttons > div {
+    border: 2px solid #d4d4d4;
+    border-radius: 5px;
+    font: 14px/40px IRANSans;
+    display: inline-block;
+    margin: 0 5px;
+    width: 120px;
+}
+#wrapper #pagewrapper .pagebox .commentssection .linke_buttons .like {
+    text-align: right;
+    padding-right: 10px;
+    background: url(images/likebg.png) no-repeat left center;
+}
+#wrapper #pagewrapper .pagebox .commentssection .linke_buttons .dislike {
+    text-align: left;
+    padding-left: 10px;
+    background: url(images/dislikebg.png) no-repeat right center;
+}
+#wrapper #pagewrapper .pagebox .commentssection .linke_buttons > div > a {display: block;color: #969696;}
+#wrapper #pagewrapper .pagebox .commentssection .scoring_info {overflow: hidden;text-align: center;}
+#wrapper #pagewrapper .pagebox .commentssection .scoring_info > div {display: inline-block;}
+#wrapper #pagewrapper .pagebox .commentssection .scoring_info .score_finaly {
+    font: 36px/40px IRANSans; 
+    color: #878787;
+}
+#wrapper #pagewrapper .pagebox .commentssection .scoring_info .like,
+#wrapper #pagewrapper .pagebox .commentssection .scoring_info .dislike {
+    font: 18px/40px IRANSans; 
+    color: #878787; 
+    padding-left: 25px;
+    margin:0 10px;
+}
+#wrapper #pagewrapper .pagebox .commentssection .scoring_info .like {
+    background: url(images/smllikebg.png) no-repeat left center;
+}
+#wrapper #pagewrapper .pagebox .commentssection .scoring_info .dislike {
+    background: url(images/smldislikebg.png) no-repeat left center;
+}
+/*--POPUP FACTOR---------------------------*/
+#popup_factor {
+    width: 490px;
+    overflow: hidden;
+    border: 1px solid #b7b7b7;
+    box-sizing: border-box;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background: #fff;
+    z-index: 500;
+    display: none;
+}
+#popup_factor #factor_tabber {width:100%;float:right;}
+#popup_factor #factor_tabber .tabbs{float:right;}
+#popup_factor #factor_tabber .tabbs > li{float:right;display:inline;}
+#popup_factor #factor_tabber .tabbs > li a{
+	display:block;
+	font:14px/45px IRANSans;
+	color:#b8b8b8;
+	padding:0 15px;
+}
+#popup_factor #factor_tabber .tabbs .active > a{border-bottom:2px solid #009688;color: #666666;}
+#popup_factor #factor_tabber .tab_container{overflow:hidden;padding:20px;font:14px/26px IRANSans;color:#424242;}
+#popup_factor #factor_tabber .tab_container .row {
+    width: 100%;
+    border: 1px solid #d2d2d2;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: hidden;
+    height: 65px;
+    margin-bottom: 5px;
+}
+#popup_factor #factor_tabber .tab_container .row > div {
+    float: right;
+    font: 14px/45px IRANSans;
+    color: #888888;
+}
+#popup_factor #factor_tabber .tab_container .row .img{width: 15%;}
+#popup_factor #factor_tabber .tab_container .row .title{width: 55%;}
+#popup_factor #factor_tabber .tab_container .row .price{width: 25%;}
+#popup_factor #factor_tabber .tab_container .row .deletefactorrow{width: 5%;}
+#popup_factor #factor_tabber .tab_container .row .deletefactorrow a{
+    width: 20px;
+    height: 45px;
+    background: url(images/deletefactorrow.png) no-repeat center center;
+    display: block;
+}
+#popup_factor #factor_tabber .tab_container .pay {
+    padding-right: 60px;
+    padding-left: 30px;
+    font: 14px/40px IRANSans;
+    border: 1px solid #009688;
+    background: url(images/popuppay.png) no-repeat right center;
+    float: right;
+}
+#popup_factor #factor_tabber .tab_container .pay a {display: block;color:#009688;}
+#popup_factor #factor_tabber .tab_container .finalyprice {
+    font: 14px/40px IRANSans;
+    float: left;
+    color: #888;
+}
+.popup .display {
+    display: block;
+}
+#slider .productinfo .sp-large {
+    width: 70%;
+    float: left;
+    text-align: left;
+}
+#slider .productinfo .sp-thumbs {
+   width: 30%; 
+}
+#slider .productinfo .sp-large a img {
+    height: 378px;
+    width: 100%;
+}
+#slider .productinfo .sp-thumbs a:link,#slider .productinfo  .sp-thumbs a:visited {
+    width: 135px;
+    height: 117px;
+    margin-left: 10px;
+}
+form label.error {
+	display: block;
+	color: #e74c3c;
+	margin-bottom: 5px;
+	font-size: 12px
+}
+
+#mainContainer {
+	margin-left: 0px;
+}
+.ui-pnotify-text {
+	font-size: 12px !important;
+}
