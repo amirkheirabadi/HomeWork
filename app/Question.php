@@ -12,7 +12,7 @@ class Question extends Model
 
    public function save(array $options = [])
    {
-        // parent::save();
+        parent::save();
         $data = [
             'name' => $this->name,
             'email' => $this->email,
