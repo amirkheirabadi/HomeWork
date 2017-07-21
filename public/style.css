@@ -895,6 +895,7 @@ body {
 	margin-top:10px;
 	overflow:hidden;
 	background:#fff;
+	margin-bottom: 20px;
 }
 #wrapper .productinfo .description{
 	width:50%;
@@ -956,7 +957,7 @@ body {
 #wrapper .productinfo .buttons .buy{
 	font:13px/45px IRANSans;	
 	float:right;
-	width:75%;
+	width:100%;
 	background:#009688;
 	box-shadow:inset -60px 0px 0px #00695c;
 }

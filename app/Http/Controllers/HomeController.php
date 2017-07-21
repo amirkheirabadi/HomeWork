@@ -58,11 +58,6 @@ class HomeController extends Controller
         return redirect('/');
     }
 
-    public function socials()
-    {
-        return view('socials');
-    }
-
     public function instagramsend(Request $request)
     {   
         return redirect(Instagram::getLoginUrl());
