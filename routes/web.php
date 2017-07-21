@@ -12,3 +12,11 @@
 */
 
 Route::any('/', 'HomeController@faq');
+
+Route::group(['prefix' => 'social'], function () {
+
+    Route::any('/instagram', 'HomeController@instagramsend');   
+    Route::any('/instagram_callback', 'HomeController@instagramCallback');    
+ 
+    Route::any('/', 'HomeController@socials');    
+});

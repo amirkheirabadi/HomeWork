@@ -5,10 +5,12 @@ namespace App\Http\Controllers;
 use App\Question;
 use App\Helper\AirTable;
 
+use Instagram;
 use Illuminate\Http\Request;
 use App\Helper\Web;
 use Validator;
 use Flash;
+
 
 class HomeController extends Controller
 {
@@ -28,7 +30,7 @@ class HomeController extends Controller
         $rules = [
             'name' => 'required',
             'email' => 'required|email',
-            'mobile' => 'required|phone:AN,mobile',
+            // 'mobile' => 'required|phone:AN,mobile',
             'text' => 'required'
         ];
 
@@ -54,5 +56,28 @@ class HomeController extends Controller
     
         Flash::success('Your question has been sent !');
         return redirect('/');
+    }
+
+    public function socials()
+    {
+        return view('socials');
+    }
+
+    public function instagramsend(Request $request)
+    {   
+        return redirect(Instagram::getLoginUrl());
+    }
+
+    public function instagramCallback(Request $request)
+    {   
+        $response = Instagram::getAccessToken($request->code);
+
+        $data = Instagram::get('v1/users/self/media/recent', ['access_token' => $response['access_token']]);
+        if (isset($response['code']) == 400)
+        {
+            throw new \Exception($response['error_message'], 400);
+        }
+
+        return view('social.instagram', compact('data'));
     }
 }

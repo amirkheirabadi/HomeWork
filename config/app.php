@@ -179,6 +179,7 @@ return [
 
         Szykra\Notifications\NotificationServiceProvider::class,
         Propaganistas\LaravelPhone\LaravelPhoneServiceProvider::class,
+        Mbarwick83\Instagram\InstagramServiceProvider::class
     ],
 
     /*
@@ -229,6 +230,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         'Flash' => Szykra\Notifications\Flash::class,
+        'Instagram'    => Mbarwick83\Instagram\Facades\Instagram::class
     ],
 
 ];

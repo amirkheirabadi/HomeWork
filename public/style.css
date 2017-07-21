@@ -540,7 +540,7 @@ body {
 	position:relative;
 	margin-left:3.5%;
 	margin-bottom:20px;
-	height:355px;
+	height:250px;
 }
 #wrapper .post:hover{background:#f9f9f9;transition:all 0.3s ease-in-out 0.1s;}
 #wrapper .post:nth-child(4n){float:left;margin-left:0;}
@@ -952,7 +952,7 @@ body {
 #wrapper .productinfo .timer .datum{display:inline-block;}
 #wrapper .productinfo .timer .datum:nth-child(2){padding:0 15px;border-left:1px solid #d4d4d4;border-right:1px solid #d4d4d4;margin:0 15px;}
 #wrapper .productinfo .timer .datum span{display:block;}
-#wrapper .productinfo .buttons {width:85%;margin:0 auto 25px;overflow:hidden;}
+#wrapper .productinfo .buttons {width:50%;overflow:hidden;margin: 10px}
 #wrapper .productinfo .buttons .buy{
 	font:13px/45px IRANSans;	
 	float:right;
@@ -1484,4 +1484,8 @@ form label.error {
 }
 .ui-pnotify-text {
 	font-size: 12px !important;
+}
+
+.buttons{
+	margin-top: 10px;
 }
